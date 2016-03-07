@@ -11,14 +11,14 @@ There are 5 R files and 4 resulting png files of interest here:
 ..
 
 #### Steps to run
-source("plot1.R")
-plot1()
-source("plot2.R")
-plot2()
-source("plot3.R")
-plot3()
-source("plot4.R")
-plot4()
+######source("plot1.R")
+######plot1()
+######source("plot2.R")
+######plot2()
+######source("plot3.R")
+######plot3()
+######source("plot4.R")
+######plot4()
 
 
 
