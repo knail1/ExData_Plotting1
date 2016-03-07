@@ -2,12 +2,12 @@
 ### Omer Ansari, 3.6.16
 
 There are 5 R files and 4 resulting png files of interest here:
-1. FetchAndUnzipData.R : This pulls the zip file and uncompress in local dir.
-2. plot1.R : this calls the function sourced from file1, and works on the uncompress data to produce:
-3. plot1.png : the required graph #1
-2. plot2.R : this calls the function sourced from file1, and works on the uncompress data to produce:
-5. plot2.png : the required graph #1, 
-2. plot3.R : this calls the function sourced from file1, and works .... (and so on)
+- FetchAndUnzipData.R : This pulls the zip file and uncompress in local dir.
+- plot1.R : this calls the function sourced from file1, and works on the uncompress data to produce:
+- plot1.png : the required graph #1
+- plot2.R : this calls the function sourced from file1, and works on the uncompress data to produce:
+- plot2.png : the required graph #1, 
+- plot3.R : this calls the function sourced from file1, and works .... (and so on)
 ..
 
 #### Steps to run
