@@ -1,4 +1,30 @@
-## Introduction
+## Exploring Data Week 1
+### Omer Ansari, 3.6.16
+
+There are 5 R files and 4 resulting png files of interest here:
+1. FetchAndUnzipData.R : This pulls the zip file and uncompress in local dir.
+2. plot1.R : this calls the function sourced from file1, and works on the uncompress data to produce:
+3. plot1.png : the required graph #1
+2. plot2.R : this calls the function sourced from file1, and works on the uncompress data to produce:
+5. plot2.png : the required graph #1, 
+2. plot3.R : this calls the function sourced from file1, and works .... (and so on)
+..
+
+#### Steps to run
+source("plot1.R")
+plot1()
+source("plot2.R")
+plot2()
+source("plot3.R")
+plot3()
+source("plot4.R")
+plot4()
+
+
+
+
+## FROM ORGINAL FORK:
+##Introduction
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
