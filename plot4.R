@@ -1,4 +1,4 @@
-plot3 <- function() {
+plot4 <- function() {
   
   # #1 first, download, unzip, 
   source("FetchAndUnzipData.R")
@@ -34,16 +34,26 @@ plot3 <- function() {
   
   # 3 , create the plot
   
-  # dev.copy (from screen to png)  was truncating the legend in upper right, so i saved it straight into png.
   
-  par(mfrow = c(1,1))
-  png("plot3.png", width=480, height=480, type="quartz")
+  # dev.copy (from screen to png)  was truncating the legend in upper right, so i saved it straight into png.
+  png("plot4.png", width = 480, height = 480, type = "quartz")
+  par(mfrow = c(2,2))
+  
+  #graph1
+  with(powerConsumptionDataSubset, plot(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Global_active_power, main = "", xlab = "", ylab = "Global Active Power",type = "l"))
+  
+  #graph2
+  with(powerConsumptionDataSubset, plot(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Voltage, main = "", xlab = "datetime", ylab = "Voltage",type = "l"))
+  
+  #graph3
   with(powerConsumptionDataSubset, plot(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Sub_metering_1, main = "", xlab = "", ylab = "Energy sub metering",type = "l"))
   lines(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Sub_metering_2, type = "l", col = "red")
   lines(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Sub_metering_3, type = "l", col = "blue")
-  
   legend("topright", pch = "-", col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-  
+
+  #graph4
+  with(powerConsumptionDataSubset, plot(powerConsumptionDataSubset$dt, powerConsumptionDataSubset$Global_reactive_power, main = "", xlab = "datetime", ylab = "Global_reactive_power",type = "l"))
+
   dev.off()
-  
-}
+
+  }
